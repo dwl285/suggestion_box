@@ -12,14 +12,16 @@ css/bootstrap.min.css" rel="stylesheet">
 </head>
 <body ng-app="SuggestionBox" ng-controller="HomeController">
 	<div class="container-fluid">
-		<h1 id="app-heading">Web Project Ideas</h1>
-		<p id="app-description">
-			Here's my list of potential web project ideas. Please help me out
- 		   by voting for the ones you like!
-	   </p>
-
-	   <div ng-view></div>
-
+		<div class="page-header">
+			<h1 id="app-heading">Web Project Ideas</h1>
+			<p id="app-description">
+				Here's my list of potential web project ideas. Please help me out
+ 		  	 	by voting for the ones you like!
+	   	 	</p>
+		</div>
+	  	<div ng-view></div>
+		</div>
+	</div>
  
 
 <!-- Modules -->
@@ -31,6 +33,5 @@ css/bootstrap.min.css" rel="stylesheet">
  
 <!-- Services -->
 <script type="text/javascript" src="js/services/suggestions.js"></script>
-	</div>
 </body>
 </html>

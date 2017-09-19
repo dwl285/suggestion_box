@@ -1,8 +1,22 @@
-<h1> {{ post.title }} </h1>
+<div class="jumbotron">
+<h2> {{ post.title }} </h2>
+</div>
 
+<div class="panel-group">
 <div ng-repeat="comment in post.comments | orderBy:'-upvotes'">
+<div class="panel panel-default">
+<div class="panel-body">
+<div class="row">
+<div class="col-md-8">
 <h2> {{ comment.body }} </h2>
-<p>
-<span class="glyphicon glyphicon-plus-sign" ng-click="upVoteComment(comment)"></span> Upvotes: {{comment.upvotes}}
-</p>
+</div>
+<div class="col-md-4">
+<div>
+<span class="glyphicon glyphicon-plus-sign" ng-click="upVoteComment(comment)"></span> <h3 class="upvotes">Upvotes: {{comment.upvotes}}</h3>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
 </div>
